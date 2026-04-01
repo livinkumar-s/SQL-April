@@ -1,0 +1,105 @@
+Database:
+----------
+>> Organized collection of data that can easily be accessed, managed and updated.
+
+RDBMS --> Relational Database Management System
+------------------------------------------------
+>> Data is stored in form of Rows and Columns (Tables).
+>> SQL id needed
+>> Ex: MySQL, PostgreSQL, Oracle.....
+
+DBMS noSQL DB
+-----
+>> Data is stoed in form of Documents(JSON, BSON).
+>> SQL is not needed.
+>> Ex: MongoDB, MariaDB..
+
+SQL ---> Structured Query Language.
+
+
+MySQL 
+-------
+>> It is open Source RDBMS.
+
+
+Syntax
+---------
+>> It is case-insensitive. (a=A)
+SELECT * FROM tableName;
+select * from tableName
+
+>> Every query should end with ;
+
+actors --> name, age, height, email, phone....
+
+DATABASE --->  Tables ---> data.
+(Schema)
+
+actorDb --> actorBasic(name, age), contactInfo(email, phone)...--> Data
+
+actorBasic --> actorId, name, age
+spouse --> name, age, profession
+
+Entity:
+-------
+The real-world object or thing about which we store data
+
+Attribute 
+-----------
+Property or details of an entity
+
+Datatypes 
+-----------
+Numeric Datatypes
+-----------------
+INT --> Whole Numbers. 1,2,3,0,-3,-4
+FLOAT --> Decimal Numbers.
+BIGINT --> Large Integers.
+DOUBLE --> Large Decimals.
+
+STRING Datatypes
+-------------------
+CHAR(n) ---> Fixed length Character String. char(5) --> "Hi", "Hello", "Hi Hi", "Priyanka" 5
+VARCHAR(n) ---> Variable Length Character String. VARCHAR(5) --> "Priyanka", "Hi", "HiHi" 5 --> 1,2,3,4,5. 
+TEXT --> Paragraph 
+
+BOOLEAN 
+---------
+boolean --> 1 or 0
+
+Date and Time 
+--------------
+DATE --> "yyyy-mm-dd". Ex: "2026-04-01"
+TIME --> "HH:MM:SS"
+DATETIME --> Both
+
+Keys & Constraint 
+----------------------
+Primary Key ---> It is used to identify records uniquely. Duplicates are not allowed, Null is also not allowed.
+
+
+Queries
+-------
+To Create Database ---> CREATE DATABASE dbname;
+To Select Database ---> USE dbname;
+To Create Table --> CREATE TABLE tbname (
+    col1 datatype constraint,
+    col2 datatype,
+    col3,
+    .
+    .
+);
+
+CRUD 
+-----
+
+
+actor 
+------
+actorId | name     | age
+-------------------------
+1       | Priyanka | 30
+2       | Deepika  | 35 
+3       | Alia     | 28
+4       | Katrina  | 32
+5       | Alia     | 45

@@ -73,6 +73,15 @@ DATE --> "yyyy-mm-dd". Ex: "2026-04-01"
 TIME --> "HH:MM:SS"
 DATETIME --> Both
 
+Operators 
+----------
+=         
+!=, <>
+<
+>
+<=
+>=
+
 Keys & Constraint 
 ----------------------
 Primary Key ---> It is used to identify records uniquely. Duplicates are not allowed, Null is also not allowed.
@@ -90,16 +99,26 @@ To Create Table --> CREATE TABLE tbname (
     .
 );
 
+To Insert Data into Table ---> INSERT INTO tbName (Col detail) VALUES (),()...;
+To Retriver Data ---> SELECT (col detail ---> *) from tbname;
+To Update a data --> UPDATE Tbname SET colName=value;
+To Delete a record --> DELETE FROM tbname;
+To Truncate a table --> TRUNCATE TABLE tbname;
+
 CRUD 
 -----
+CREATE ---> Inserting Data into a table
+READ ---> Retriving Data from a table.
+UPDATE ---> Modifying an existing data.
+DELETE --> Delete Record from a table
 
+SQL_SAFE_UPDATES ---> Cannot perform update/delete without filteration. Can update/delete only one record at a time, only primary key col can be used in condition;
 
-actor 
+SET SQL_SAFE_UPDATES=0;
+
+WHERE 
 ------
-actorId | name     | age
--------------------------
-1       | Priyanka | 30
-2       | Deepika  | 35 
-3       | Alia     | 28
-4       | Katrina  | 32
-5       | Alia     | 45
+>> Used to do filteration with rows.
+EX: SELECT, UPDATE, DELETE .... WHERE cond;
+
+

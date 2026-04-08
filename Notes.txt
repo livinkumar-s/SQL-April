@@ -75,12 +75,46 @@ DATETIME --> Both
 
 Operators 
 ----------
+Comparison 
+------------
 =         
 !=, <>
 <
 >
 <=
 >=
+
+Range Filtering (inclusive range)
+----------------
+BETWEEN 
+Ex: ..... WHERE colName BETWEEN num1 AND num2;
+
+Logical Operators (combine more conditions)
+-----------------
+and 
+or
+not 
+
+Multiple Values  (IN, NOT IN)
+-------------------------
+>> Replaces Multiple OR Operator.
+Ex: WHERE col IN (val1, val2.....)
+
+LIKE Operator
+---------------
+PATTERN MATCHING
+Ex: WHERE col LIKE "pattern";
+
+WILDCARDS
+-----------
+% --- will match 0 to inf number of chars
+_ --- will match only one char 
+
+Start with 'v' --> "va%"  --> "vignesh", "varun", "Vani"
+Ends with "n" --> "%n"
+%v%n% --> varun, vani,
+"v____" 
+
 
 Keys & Constraint 
 ----------------------

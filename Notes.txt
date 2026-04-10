@@ -119,7 +119,7 @@ Ends with "n" --> "%n"
 Keys & Constraint 
 ----------------------
 Primary Key ---> It is used to identify records uniquely. Duplicates are not allowed, Null is also not allowed.
-
+Foreign Key -->
 
 Queries
 -------
@@ -155,4 +155,32 @@ WHERE
 >> Used to do filteration with rows.
 EX: SELECT, UPDATE, DELETE .... WHERE cond;
 
+Functions
+------------
+Functions are built in operations that take input --> porocess it ---> return output.
 
+Numeric Functions 
+--------------------
+ROUND(num,dec) --> Round off a number to closer value. Ex: ROUND(9.7777,2)-->9.78
+FLOOR(num) ----> goes for floor number. FLOOR(9.7777) --> 9
+CEIL(num) ---> goes for next int. CEIL(9.333) ---> 10
+MOD(num1,num2) ---> reminder
+ABS(num) --> Num without any sign. ABS(10) --> 10
+POWER(2,2) --> 2 power 2
+SQRT(num) --> square root
+
+STRING Functions
+----------------
+CONCAT(str1,str2,str3....) ---> concatination
+LENGTH(str) --> length of the str. 
+UPPER, LOWER ---> case conversion
+REPLACE(str, old, new) --> replacing a substr with another.
+TRIM(str) --> remove white spaces
+SUBSTRING(str, start, length) --> "Good morning" --> "Good"
+
+DATE and TIME Functions 
+---------------------------
+CURDATE() 
+CURTIME()
+now()
+DATEDIFF(d1,d2)

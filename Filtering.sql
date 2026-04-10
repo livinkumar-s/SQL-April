@@ -19,5 +19,6 @@ WHERE age not in (30,31,33,43,45,46,50,51,53,73,80);
 SELECT * FROM studentbasic WHERE name LIKE "%n";
 SELECT * FROM studentbasic WHERE name LIKE "%v%n%";
 SELECT * FROM studentbasic WHERE name LIKE "% %" and age<50;
+SELECT * FROM studentbasic WHERE name LIKE "s%r_a"; 
 
 

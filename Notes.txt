@@ -196,6 +196,41 @@ now()
 DATEDIFF(d1,d2)
 
 
+Joins 
+----------
+>> combine columns from 2 or more table.
+
+Inner Joins
+--------------
+>> Returns only matching rows from both table.
+Ex: SELECT (col details) FROM tb1 INNER JOIN tb2 ON (related col);
+
+LEFT OUTER JOIN 
+---------------
+>> All the records from left
+>> matching records from right table.
+Ex: SELECT (col details) FROM tb1 LEFT JOIN tb2 ON (related col);
+
+RIGHT OUTER JOIN 
+---------------
+>> All the records from right
+>> matching records from left table.
+Ex: SELECT (col details) FROM tb1 RIGHT JOIN tb2 ON (related col);
+
+FULL OUTER JOIN 
+---------------
+>> All the records from right both table.
+Ex: 
+SELECT (col details) FROM tb1 RIGHT JOIN tb2 ON (related col)
+UNION
+ SELECT (col details) FROM tb1 RIGHT JOIN tb2 ON (related col)
+
+RIGHT OUTER JOIN 
+---------------
+>> All the records from right
+>> matching records from left table.
+Ex: SELECT (col details) FROM tb1 RIGHT JOIN tb2 ON (related col);
+
 
 
 studentBasic
@@ -213,11 +248,19 @@ id(pk)  name            age
 
 studentDetails 
 -----------------
-cxol1    col2     .......    studentId(fk ---> pk(studentBasic))
-----------------------------------------
-****************************  11
+1	vj@gmail.com	8975648965	1	250	1
+2	sr@gmail.com	9975648965	1	240	2
+3	sb@gmail.com	9375648965	0	201	7
+5	ak@gmail.com	8885648965	0	288	3
 
-studentMarks 
-------------
-mark1   *********** studentId (fk ---> pk(studentBasic))
-100 100              60
+studentmarks
+----------------
+1	85	1
+2	90	2
+3	78	3
+4	92	4
+5	88	5
+6	35	12
+
+left join 
+studentBasic --> studentmarks

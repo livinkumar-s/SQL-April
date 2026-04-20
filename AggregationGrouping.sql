@@ -1,4 +1,4 @@
-use dummy;
+use student;
 
 CREATE TABLE product(
 proId int primary key auto_increment,
@@ -32,7 +32,7 @@ INSERT INTO product (name, price, category) values
 ("blueberry",21.44,"fruit"),
 ("TV",600.44,"gadget"),
 ("smartwatch",150.44,"gadget"),
-("camera",250.44,"gadget")
+("camera",250.44,"gadget"),
 ("monitor",400.44,"gadget");
 
 
@@ -49,3 +49,27 @@ select count(*), sum(price) from product;
 select name, avg(price) from product;
 
 select category,count(category) from product GROUP BY category;
+
+select category,count(category) from product WHERE price>=20
+ GROUP BY category;
+
+ALTER TABLE product ADD isAvailable boolean;
+
+ALTER TABLE product ADD numberOfUnitsAvailable bigint AFTER name;
+
+ALTER TABLE product MODIFY category varchar(15);
+
+ALTER TABLE product CHANGE numberOfUnitsAvailable Units bigint;
+
+ALTER TABLE product RENAME COLUMN isAvailable TO availablity;
+
+ALTER TABLE product DROP COLUMN availablity;
+
+ALTER TABLE product RENAME TO productDetails;
+
+DROP TABLE studentbasic;
+
+DROP DATABASE dummy;
+
+ ALTER TABLE studentbasic add dummy1 int, add dummy2 int;
+ ALTER TABLE studentbasic drop column dummy1, drop column dummy2;

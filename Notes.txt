@@ -160,6 +160,23 @@ SQL_SAFE_UPDATES ---> Cannot perform update/delete without filteration. Can upda
 
 SET SQL_SAFE_UPDATES=0;
 
+ALTER 
+------
+basic Syntax ---> ALTER TABLE tbname action;
+
+Add New Col ---> ALTER TABLE tbname ADD col detail;
+            ---> ALTER TABLE tbname ADD col1, ADD col2......;
+            ---> ALTER TABLE tbname ADD col1 AFTER/BEFORE col;
+Modify column --> ALTER TABLE tbname MODIFY col datatype;
+RENAME col ---> ALTER TABLE tbname CHANGE oldName NewNAme datatype;
+           ---> ALTER TABLE tbname RENAME COLUMN old TO new;
+DROP COL ---> ALTER TABLE tbname DROP COLUMN col1;
+         --->  ALTER TABLE tbname DROP col1, DROP col2......;
+
+RENAME TABLE ---> ALTER TABLE tbname RENAME TO new;
+DROP Table ---> DROP TABLE tbname;
+DROP DB/Schema ---> DROP DATABASE dbName;
+
 WHERE 
 ------
 >> Used to do filteration with rows.
@@ -245,3 +262,5 @@ Ex: aggr..... GROUP BY col;
 
 WHERE ---> filter the rows 
 HAVING ---> filter the groups
+
+

@@ -37,7 +37,8 @@ studentmarks s2 on s1.studentId = s2.studentId;
 
 SELECT S1.name, S1.age, S2.email,S3.marks
 FROM studentbasic S1
-INNER JOIN studentdetails S2
+LEFT JOIN studentdetails S2
     ON S1.studentId = S2.studentId
-INNER JOIN Studentmarks S3
+LEFT JOIN Studentmarks S3
     ON S2.studentId = S3.studentId;
+    

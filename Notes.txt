@@ -225,42 +225,23 @@ SELECT (col details) FROM tb1 RIGHT JOIN tb2 ON (related col)
 UNION
  SELECT (col details) FROM tb1 RIGHT JOIN tb2 ON (related col)
 
-RIGHT OUTER JOIN 
----------------
->> All the records from right
->> matching records from left table.
-Ex: SELECT (col details) FROM tb1 RIGHT JOIN tb2 ON (related col);
 
+Aggregation and Grouping 
+-------------------------
+>> combining multiple rows into one result.
 
+Aggregate Functions 
+--------------------
+COUNT()
+SUM()
+AVG()
+MIN()
+MAX()
 
-studentBasic
------------------
-id(pk)  name            age
-1	Vijay	        53
-2	Surya	        51
-3	Ajith	        53
-4	Suriya	        50
-5	Karthi	        49
-6	Dhanush	        48
-7	Simbu	        47
-8	Vikram	        46
-9	Pawan Kalyan	54
+Grouping 
+-----------
+>> Grouping rows that have same values.
+Ex: aggr..... GROUP BY col;
 
-studentDetails 
------------------
-1	vj@gmail.com	8975648965	1	250	1
-2	sr@gmail.com	9975648965	1	240	2
-3	sb@gmail.com	9375648965	0	201	7
-5	ak@gmail.com	8885648965	0	288	3
-
-studentmarks
-----------------
-1	85	1
-2	90	2
-3	78	3
-4	92	4
-5	88	5
-6	35	12
-
-left join 
-studentBasic --> studentmarks
+WHERE ---> filter the rows 
+HAVING ---> filter the groups

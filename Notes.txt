@@ -264,3 +264,37 @@ WHERE ---> filter the rows
 HAVING ---> filter the groups
 
 
+Sub Queries 
+-------------
+>> Query written inside another query.
+> nested query, inner query
+
+Ex: query..... (query)
+
+>> Sub query runs first
+>> When you need result of one query for another query.
+
+Types
+---------
+Single row sub query 
+---------------------
+>> Sub query returns single row
+Ex: select * from studenothers where 
+marks>(select avg(marks) from studenothers);
+
+Multiple Row sub query 
+------------------------
+>> Sub query returns multi rows.
+
+ANY 
+----
+compares with any one  returned value.
+
+ALL 
+-----
+Compares with all returned value.
+
+Correlated Subqueries 
+-----------------------
+>> outer query depends on inner. inner query depends on outer query.
+>> sub query is going to get executed record by record.

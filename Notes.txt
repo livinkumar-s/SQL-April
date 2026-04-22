@@ -298,3 +298,15 @@ Correlated Subqueries
 -----------------------
 >> outer query depends on inner. inner query depends on outer query.
 >> sub query is going to get executed record by record.
+
+Views 
+-------
+A VIEW is a virtual table.
+It stores a query, not actual data.
+
+Used for:
+-----------
+Security
+Simplicity
+
+To create a VIEW ---> CREATE VIEW viewName AS SELECT .....;

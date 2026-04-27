@@ -310,3 +310,32 @@ Security
 Simplicity
 
 To create a VIEW ---> CREATE VIEW viewName AS SELECT .....;
+
+
+Transactions 
+-------------
+START TRANSACTION:
+Queries..
+...
+COMMIT
+ROLLBACK
+
+Procedure
+----------
+Reusable block of SQL statements.
+
+Syntax:
+-----------
+
+DELIMITER //
+
+CREATE PROCEDURE procedureName()
+BEGIN
+query1;
+query2;
+END //
+
+DELIMITER ;
+
+CALL procedureName()
+
